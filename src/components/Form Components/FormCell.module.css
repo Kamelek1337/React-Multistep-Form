@@ -1,0 +1,63 @@
+.formCell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.formCellInput {
+  width: 100%;
+  padding: 0.7rem 1.2rem;
+  border: 1px solid #9699ab7a;
+  border-radius: 0.3rem;
+  background-color: transparent;
+  font-size: 1rem;
+  outline: none;
+  color: #02295a;
+  font-weight: 600;
+  font-family: "Ubuntu";
+}
+.formCellInput:focus {
+  border: 1px solid #043c7c;
+}
+.formCellInput.error {
+  border: 1px solid hsl(354, 84%, 57%);
+}
+
+.formCell label {
+  font-size: 16px;
+  color: #02295a;
+  font-weight: 400;
+}
+.formCell input::placeholder {
+  color: #9196adce;
+  font-size: 100;
+  font-size: 15px;
+}
+.labelBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.err {
+  color: hsl(354, 84%, 57%);
+  font-weight: 500;
+}
+.mobileError {
+  color: hsl(354, 84%, 57%);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 600px) {
+  .formCellInput {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+  }
+  .formCell label {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .formCell input::placeholder {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,49 @@
+.step {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  gap: 1rem;
+  font-size: 15px;
+  font-family: "Ubuntu";
+}
+.circle {
+  background-color: #473dff;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.85rem;
+  border-radius: 50%;
+  margin: 0;
+  border: 2px solid #bfe2fd;
+  color: #bfe2fd;
+}
+.circle.checked {
+  background-color: #bfe2fd;
+  color: #02295a;
+}
+.stepNum {
+  margin: 0;
+  margin-bottom: 0.1rem;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.stepBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.stepBox p {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  .circle {
+    margin-top: 2rem;
+    padding: 0.3rem 0.6rem;
+    background-color: transparent;
+  }
+  .stepNum {
+    font-size: 14px;
+  }
+}

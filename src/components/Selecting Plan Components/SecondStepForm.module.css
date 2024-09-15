@@ -1,0 +1,55 @@
+.planBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6.1rem;
+  gap: 1.5rem;
+  height: 250px;
+}
+.optionBox {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.selectPlan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.selectPlan h5 {
+  padding: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #9699ab;
+  margin-right: 15px;
+  margin-left: 22.5px;
+}
+.selectPlanBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.2rem;
+  width: 80%;
+}
+#selected {
+  color: #02295a;
+}
+@media only screen and (max-width: 600px) {
+  .planBox {
+    padding: 0 1.2rem;
+    gap: 0.5rem;
+    margin-bottom: 5.5rem;
+    height: auto;
+  }
+  .optionBox {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .selectPlanBox {
+    margin-right: 1.3rem;
+  }
+  .selectPlan h5 {
+    font-size: 14px;
+    margin-right: 0;
+  }
+}

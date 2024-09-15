@@ -1,0 +1,113 @@
+.informationBox {
+  height: 100%;
+  width: 49%;
+}
+.informationBox h1 {
+  margin: 0;
+  margin-top: 3rem;
+  font-size: 32px;
+  color: #02295a;
+}
+.informationBox p {
+  margin: 0;
+  margin-top: 0.7rem;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+  color: #9699ab;
+  font-size: 16px;
+}
+.informationBox form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 6.2rem;
+}
+.buttonBox {
+  display: flex;
+  justify-content: space-between;
+}
+.formSubmitButton {
+  background-color: #02295a;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  font-size: 16px;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  border-radius: 0.5rem;
+}
+
+.formSubmitButton:hover {
+  background-color: #043c7c;
+  cursor: pointer;
+}
+.formSubmitButton.confirm {
+  background-color: #503cfc;
+  padding: 1rem 2rem;
+}
+.formSubmitButton.confirm:hover {
+  cursor: pointer;
+  background-color: #988cfc;
+}
+.formBackButton {
+  color: #9699ab;
+  background-color: white;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  border-radius: 0.5rem;
+}
+
+.formBackButton:hover {
+  color: #02295a;
+  cursor: pointer;
+}
+.formBackButton.disabled {
+  color: white;
+  cursor: default;
+}
+@media only screen and (max-width: 600px) {
+  .informationBox {
+    width: 90%;
+    z-index: 2;
+    position: absolute;
+    background-color: white;
+    margin-top: 6.2rem;
+    border-radius: 10px;
+    height: 80%;
+  }
+  .informationBox h1 {
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: 800;
+    padding: 0 1.5rem;
+    padding-top: 2rem;
+  }
+  .informationBox p {
+    margin-bottom: 1.5rem;
+    font-size: 15px;
+    line-height: 26px;
+    margin-right: 3rem;
+    padding: 0 1.5rem;
+  }
+  .informationBox form {
+    margin-bottom: 9.2rem;
+    padding: 0 1.5rem;
+  }
+  .formSubmitButton {
+    padding: 0.8rem 1rem;
+    font-size: 14px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+  .formBackButton {
+    position: absolute;
+    bottom: 1.7rem;
+    left: 1rem;
+  }
+}
